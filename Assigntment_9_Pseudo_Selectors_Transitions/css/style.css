@@ -1,47 +1,66 @@
 /* Every selector you need to work with has been placed at the top */
 
-#box-a {
-    border: 1px solid black;
+#box-a:hover {
+    border: 5px solid black;
+    border-style:dashed;
+    border-color: blueviolet;
+    transition :none
+    
 }
 
 
-#box-b {
+#box-b:active {
     border: 1px solid black;
+    background-color: rgb(201, 84, 216);
+    transition: 1s ease-in-out;
 }
 
 
-#box-c {
+#box-c:active {
     border: 1px solid black;
+    color:red;
+    font-size: 24px;
+    transition: color 1s ease-out, Size  1s ease-in;
 }
 
 
-#box-d {
+#box-d:active {
     border: 1px solid black;
     overflow: hidden;
+    border-radius: 50%;
+    transition: 2s ease-in;
 }
 
 
-#box-e {
+#box-e:hover {
     border: 1px solid black;
     transition: padding-top 5s ease;
+    padding-top: 100px;
+    transition: 5s ease;
 }
 
 
-#box-f {
-    border: 1px solid black;
+#box-f:hover {
+    border: 4px solid black;
     transition: color 2s, background-color 4s, border 3s;
+    color:rgb(13, 240, 51);
+    background-color: rgb(223, 20, 20);
+    border-color: rgb(240, 205, 10);
 }
 
 
-.nav-button {
+.nav-button:hover {
     padding: 10px 0;
     border: 1px solid black;
+    color:azure;
+    background-color: gray;
 }
 
 
-#middle-container > p {
+#middle-container > p:nth-child(2n) {
     border: 1px solid black;
     padding-top: 30px;
+    background-color: red;
 }
 
 
